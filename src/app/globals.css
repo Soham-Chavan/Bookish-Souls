@@ -2,20 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+
+.neon-text {
+  color: #39FF14;
+  text-shadow: 0 0 5px #39FF14, 0 0 5px #39FF14, 0 0 10px #39FF14;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.neon-title {
+  color: #ffffff; /* White text */
+  text-shadow:
+      0 0 8px #ffffff,   /* Soft white glow */
+      0 0 15px #ffffff,  /* Stronger white glow */
+      -1px -1px 0 #000000, /* Black outline - top left */
+      1px -1px 0 #000000,  /* Black outline - top right */
+      -1px 1px 0 #000000,  /* Black outline - bottom left */
+      1px 1px 0 #000000;   /* Black outline - bottom right */
+  background-color: #000000;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+
+
+

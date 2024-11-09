@@ -8,8 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'neon-green': '#39FF14',
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      boxShadow: {
+        'neon-glow': '0px 0px 13px 3px rgba(57, 255, 20, 0.6)',
       },
     },
   },
